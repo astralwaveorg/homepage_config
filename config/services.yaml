@@ -1,300 +1,313 @@
----
-# 服务器信息 (Oracle Cloud & Home Service)
-# 参考文档：https://gethomepage.dev/configs/services/
-# ICON查询：https://pictogrammers.com/library/mdi/
+# Homepage 服务总配置
+# 已整合最新内网服务 + PT站点 + 云服务
+# https://gethomepage.dev/configs/services/
 
-- 公网服务:
-    - Plex:
-        icon: mdi-plex
-        href: https://plex.homehub.stream:8443/web/index.html#!/
-        description: Plex 媒体服务器
+- 系统管理:
+    - OpenWrt 管理界面:
+        icon: mdi-router-network
+        href: https://wrt.homehub.stream:8443/
+        description: OpenWrt 路由管理后台
+        siteMonitor: https://wrt.homehub.stream:8443/
         target: _blank
+        server: 10.0.1.1
+
+    - DDNS-Go:
+        icon: mdi-dns
+        href: https://ddns.homehub.stream:8443/
+        description: 动态域名解析（DDNS-Go）
+        siteMonitor: https://ddns.homehub.stream:8443/
+        server: 10.0.1.1
+        target: _blank
+
+    - PVE 虚拟化管理:
+        icon: mdi-server
+        href: https://pve.homehub.stream:8443/
+        description: Proxmox VE 管理面板
+        siteMonitor: https://pve.homehub.stream:8443/
+        server: 10.0.1.253
+        target: _blank
+
+    - 飞牛 OS 面板:
+        icon: mdi-desktop-tower
+        href: https://fn.homehub.stream:8443/
+        description: 飞牛 OS 主机管理中心
+        siteMonitor: https://fn.homehub.stream:8443/
+        server: 10.0.1.2
+
+    - 飞牛OS 1Panel:
+        icon: mdi-view-dashboard-variant
+        href: https://panel.homehub.stream:8443/
+        description: 1Panel 面板（飞牛 OS）
+        siteMonitor: https://panel.homehub.stream:8443/
+        server: 10.0.1.2
+        target: _blank
+
+    - Ubuntu 1Panel:
+        icon: mdi-view-dashboard-variant
+        href: https://upanel.homehub.stream:8443/
+        description: 1Panel（Ubuntu 服务器）
+        siteMonitor: https://upanel.homehub.stream:8443/
+        server: 10.0.1.5
+
+    - 系统监控中心:
+        icon: mdi-chart-box-outline
+        href: https://monitor.homehub.stream:8443/
+        description: Grafana 系统监控与可视化
+        siteMonitor: https://monitor.homehub.stream:8443/
+        server: 10.0.1.5
+
+    - 青龙面板:
+        icon: mdi-script-text-outline
+        href: https://ql.homehub.stream:8443/
+        description: 自动化脚本任务编排（青龙）
+        siteMonitor: https://ql.homehub.stream:8443/
+        server: 10.0.1.5
+
+    - SSL 黑洞:
+        icon: mdi-shield-lock
+        href: https://blackhole.local/
+        description: 安全默认站点（黑洞页）
+
+- 媒体服务:
+    - Plex 媒体服务器:
+        icon: mdi-plex
+        href: https://plex.homehub.stream:8443/web
+        description: Plex 媒体库与家庭影音中心
         siteMonitor: https://plex.homehub.stream:8443/
+        server: 10.0.1.2
+
     - 飞牛影视:
         icon: mdi-movie-roll
-        href: https://fn.homehub.stream:8443/v
-        description: 飞牛OS 影视服务
-        target: _blank
-        siteMonitor: https://fn.homehub.stream:8443/v
-    - Jellyfin:
-        icon: mdi-jellyfin
-        href: https://tv.homehub.stream:8443/web/#/home.html
-        description: 在线影视服务（Jellyfin）
-        target: _blank
-        siteMonitor: https://tv.homehub.stream:8443
+        href: https://mv.homehub.stream:8443/
+        description: 飞牛 OS 自带影视系统
+        siteMonitor: https://mv.homehub.stream:8443/
+        server: 10.0.1.2
+
     - MoviePilot:
         icon: mdi-movie-open
         href: https://mp.homehub.stream:8443/
-        description: MoviePilot 影音管理
-        target: _blank
-        siteMonitor: https://mp.homehub.stream:8443
-    - 飞牛OS:
-        icon: mdi-folder-network-outline
-        href: https://fn.homehub.stream:8443/
-        description: 飞牛OS 主机管理
-        target: _blank
-        siteMonitor: https://fn.homehub.stream:8443
-    - 1Panel:
-        icon: mdi-view-dashboard-variant
-        href: https://panel.homehub.stream:8443/astral
-        description: 1Panel 管理面板
-        target: _blank
-        siteMonitor: https://panel.homehub.stream:8443/
-    - qBittorrent:
-        icon: mdi-qbittorrent
-        href: https://qb.homehub.stream:8443
-        description: qBittorrent WebUI
-        target: _blank
-        siteMonitor: https://qb.homehub.stream:8443
-    - qBittorrent-刷流:
-        icon: mdi-trending-up
-        href: https://flush.homehub.stream:8443
-        description: 刷流专用 qBittorrent
-        target: _blank
-        siteMonitor: https://flush.homehub.stream:8443
-    - qBittorrent-保种:
-        icon: mdi-seed
-        href: https://keep.homehub.stream:8443
-        description: 保种专用 qBittorrent
-        target: _blank
-        siteMonitor: https://keep.homehub.stream:8443
-    - 青龙面板:
-        icon: mdi-script-text
-        href: https://ql.homehub.stream:8443/
-        description: 定时任务平台
-        target: _blank
-        siteMonitor: https://ql.homehub.stream:8443
-    - Transmission-桌面:
-        icon: mdi-transmission-tower
-        href: https://tr.homehub.stream:8443/transmission/web/index.html?devicetype=computer
-        description: Transmission WebUI
-        target: _blank
-        siteMonitor: https://tr.homehub.stream:8443
-    - Transmission-移动:
-        icon: mdi-transmission-tower
-        href: https://tr.homehub.stream:8443/transmission/web/index.mobile.html
-        description: Transmission WebUI (移动端)
-        target: _blank
-        siteMonitor: https://tr.homehub.stream:8443
-    - 服务器 IMPI:
-        icon: mdi-monitor
-        href: http://impi.ddns.net:60808/
-        description: NAS IMPI管理面板
-        target: _blank
-        siteMonitor: http://impi.ddns.net:60808/
-    - Aria2:
-        icon: mdi-download-network
-        href: https://aria.homehub.stream:8443/
-        description: 下载工具 Aria2
-        target: _blank
-        siteMonitor: https://aria.homehub.stream:8443
+        description: MoviePilot 媒体管理平台
+        siteMonitor: https://mp.homehub.stream:8443/
+        server: 10.0.1.2
 
-- 内网服务:
-    - Plex[内]:
-        icon: mdi-plex
-        href: http://192.168.31.8:32400/web/index.html#!/
-        description: Plex 媒体服务器
-        target: _blank
-        siteMonitor: https://plex.homehub.stream:8443
-    - 飞牛影视[内]:
-        icon: mdi-movie-roll
-        href: http://192.168.31.8:5666/v
-        description: 飞牛OS 影视服务
-        target: _blank
-        siteMonitor: https://fn.homehub.stream:8443
-    - Jellyfin[内]:
-        icon: mdi-jellyfin
-        href: http://192.168.31.8:28096/web/#/home.html
-        description: 在线影视服务（Jellyfin）
-        target: _blank
-        siteMonitor: https://tv.homehub.stream:8443
-    - MoviePilot[内]:
-        icon: mdi-movie-open
-        href: http://192.168.31.8:42720
-        description: MoviePilot 影音管理
-        target: _blank
-        siteMonitor: https://mp.homehub.stream:8443
-    - 飞牛OS[内]:
-        icon: mdi-folder-network-outline
-        href: http://192.168.31.8:5666
-        description: 飞牛OS 主机管理
-        target: _blank
-        siteMonitor: https://fn.homehub.stream:8443
-    - 1Panel[内]:
-        icon: mdi-view-dashboard-variant
-        href: http://192.168.31.8:17859/astral
-        description: 1Panel 管理面板
-        target: _blank
-        siteMonitor: https://panel.homehub.stream:8443
-    - qBittorrent[内]:
-        icon: mdi-qbittorrent
-        href: http://192.168.31.8:50581
-        description: qBittorrent WebUI
-        target: _blank
-        siteMonitor: https://qb.homehub.stream:8443
-    - qBittorrent-刷流[内]:
-        icon: mdi-trending-up
-        href: http://192.168.31.8:50582
-        description: 刷流专用 qBittorrent
-        target: _blank
-        siteMonitor: https://qbit.homehub.stream:8443
-    - qBittorrent-保种[内]:
-        icon: mdi-seed
-        href: http://192.168.31.8:50583
-        description: 保种专用 qBittorrent
-        target: _blank
-        siteMonitor: https://keep.homehub.stream:8443
-    - 青龙面板[内]:
-        icon: mdi-script-text
-        href: http://192.168.31.8:15700
-        description: 青龙定时任务平台
-        target: _blank
-        siteMonitor: https://ql.homehub.stream:8443
-    - Transmission-桌面[内]:
+- 下载服务:
+    - Transmission:
         icon: mdi-transmission-tower
-        href: http://192.168.31.8:9091/transmission/web/index.html?devicetype=computer
-        description: Transmission WebUI
-        target: _blank
-        siteMonitor: https://tr.homehub.stream:8443
-    - Transmission-移动[内]:
-        icon: mdi-transmission-tower
-        href: http://192.168.31.8:9091/transmission/web/index.mobile.html
-        description: Transmission WebUI (移动端)
-        target: _blank
-        siteMonitor: https://tr.homehub.stream:8443
-    - 服务器 IMPI[内]:
-        icon: mdi-monitor
-        href: http://192.168.31.81
-        description: NAS IMPI管理面板
-        target: _blank
-        siteMonitor: http://impi.ddns.net:60808/
-    - 路由器[内]:
-        icon: mdi-router-wireless
-        href: http://192.168.31.1
-        description: 路由器管理
-        target: _blank
-        siteMonitor: http://lab.homehub.stream:8443
+        href: https://tr.homehub.stream:8443/
+        description: Transmission BT 下载器
+        siteMonitor: https://tr.homehub.stream:8443/
+        server: 10.0.1.2
 
-- PT站点:
+    - qBittorrent（订阅）:
+        icon: mdi-qbittorrent
+        href: https://qb.homehub.stream:8443/
+        description: qBittorrent 订阅下载节点
+        siteMonitor: https://qb.homehub.stream:8443/
+        server: 10.0.1.2
+
+    - qBittorrent（刷流）:
+        icon: mdi-trending-up
+        href: https://flush.homehub.stream:8443/
+        description: 刷流专用高速客户端
+        siteMonitor: https://flush.homehub.stream:8443/
+        server: 10.0.1.2
+
+    - qBittorrent（保种）:
+        icon: mdi-seed
+        href: https://keep.homehub.stream:8443/
+        description: 长期保种稳定节点
+        siteMonitor: https://keep.homehub.stream:8443/
+        server: 10.0.1.2
+
+- Docker 服务:
+    - Docker 镜像仓库:
+        icon: mdi-docker
+        href: https://docker.homehub.stream:8443/
+        description: Nexus3 Docker 镜像仓库（SSL 反代）
+        siteMonitor: https://docker.homehub.stream:8443/
+        server: 10.0.1.10
+
+    - Docker Web 控制台:
+        icon: mdi-docker
+        href: https://docweb.homehub.stream:8443/
+        description: Nexus3 Web 控制台
+        siteMonitor: https://docweb.homehub.stream:8443/
+        server: 10.0.1.10
+
+- SSH 管理入口:
+    - NanoPi（OpenWrt）:
+        icon: mdi-console
+        href: ssh://root@lab.homehub.stream:22001
+        description: SSH → 10.0.1.1（NanoPi OS）
+
+    - FnOS 主机:
+        icon: mdi-console-line
+        href: ssh://root@lab.homehub.stream:22002
+        description: SSH → 10.0.1.2（飞牛 OS）
+
+    - AdGuardHome VM:
+        icon: mdi-shield-check
+        href: ssh://root@lab.homehub.stream:23003
+        description: SSH → 10.0.1.3（AdGuardHome）
+
+    - Clash VM:
+        icon: mdi-shield-lock-outline
+        href: ssh://root@lab.homehub.stream:23004
+        description: SSH → 10.0.1.4（Clash / Proxy）
+
+    - Ubuntu VM:
+        icon: mdi-console-network
+        href: ssh://root@lab.homehub.stream:23005
+        description: SSH → 10.0.1.5（Ubuntu）
+
+    - Docker VM:
+        icon: mdi-docker
+        href: ssh://root@lab.homehub.stream:23010
+        description: SSH → 10.0.1.10（Docker 主机）
+
+    - PVE 主机:
+        icon: mdi-server
+        href: ssh://root@lab.homehub.stream:22253
+        description: SSH → 10.0.1.253（PVE）
+
+- PT 站点:
     - M-Team 馒头:
         icon: mdi-torrent
         href: https://kp.m-team.cc/browse
-        description: 资源全面，做种健康，全球知名中文PT站
-        target: _blank
+        description: 资源全面，做种健康，顶级中文 PT 站
         siteMonitor: https://api2.m-team.cc/
+        target: _blank
+
     - Audiences 观众:
         icon: mdi-torrent
         href: https://audiences.me/
-        description: 界面现代，资源更新快，综合型站
-        target: _blank
+        description: 界面现代，资源更新快，综合型 PT
         siteMonitor: https://audiences.me/
+        target: _blank
+
     - HHCLUB 憨憨:
         icon: mdi-torrent
         href: https://hhanclub.top/
-        description: 邀请制，高要求，优质种子集中地
-        target: _blank
+        description: 邀请制，高质量种子集中地
         siteMonitor: https://hhanclub.top/
+        target: _blank
+
     - 皇后音乐:
         icon: mdi-music
         href: https://open.cd/
-        description: 华语圈最专业无损音乐站，品质极高
+        description: 最专业的中文无损音乐 PT
         target: _blank
+
     - 海豚音乐:
         icon: mdi-music
         href: https://dicmusic.com/torrents.php
-        description: 欧美古典/独立音乐资源丰富，专注音质
+        description: 欧美与古典音乐资源丰富
         target: _blank
+
     - JPopsuki 音乐:
         icon: mdi-music
         href: https://jpopsuki.eu/torrents.php
-        description: 全球顶级日音无损站，J-Pop/动漫原声首选
+        description: 顶级日音无损 PT，J-Pop/动漫音乐首选
         target: _blank
+
     - PTTime:
         icon: mdi-torrent
         href: https://www.pttime.org/torrents.php
-        description: 高清影视为主，老牌稳定，社区活跃
-        target: _blank
+        description: 高清影视为主，稳定老站
         siteMonitor: https://www.pttime.org/torrents.php
+        target: _blank
+
     - HDTime 高清时间:
         icon: mdi-filmstrip
         href: https://hdtime.org/
-        description: 专注高清影视，画质优秀，适合追剧
-        target: _blank
+        description: 专注高清影视，高画质
         siteMonitor: https://hdtime.org/
+        target: _blank
+
     - BTSCHOOL:
         icon: mdi-torrent
         href: https://pt.btschool.club/torrents.php
-        description: 多元资源，用户基数大，长期运营
-        target: _blank
+        description: 综合资源，体量大，长期稳定
         siteMonitor: https://pt.btschool.club/torrents.php
+        target: _blank
+
     - PTSKIT:
         icon: mdi-torrent
         href: https://www.ptskit.org/torrents.php
-        description: 综合资源，偏重电影与动画，稳定运行
-        target: _blank
+        description: 动漫/电影为主，经典老站
         siteMonitor: https://www.ptskit.org/torrents.php
+        target: _blank
+
     - 下水道PT:
         icon: mdi-torrent
         href: https://sewerpt.com/torrents.php
-        description: 小众趣味站，资源较新，社区轻松
-        target: _blank
+        description: 趣味小众站，资源更新快
         siteMonitor: https://sewerpt.com/torrents.php
+        target: _blank
+
     - Rousi 肉丝:
         icon: mdi-torrent
         href: https://rousi.zip/torrents.php
-        description: 小型站，资源偏冷门，适合探索
-        target: _blank
+        description: 小型站，冷门资源多
         siteMonitor: https://rousi.zip/torrents.php
+        target: _blank
+
     - 唐门PT:
         icon: mdi-torrent
         href: https://tmpt.top/torrents.php
-        description: 中小型站，资源以国产为主，风格独特
-        target: _blank
+        description: 国产影视为主，小众特色 PT
         siteMonitor: https://tmpt.top/torrents.php
+        target: _blank
+
     - HappyFappy:
         icon: mdi-torrent
         href: https://www.happyfappy.org/torrents.php
-        description: 社区友好，资源覆盖广，适合新手
-        target: _blank
+        description: 社区友好，新手友好 PT
         siteMonitor: https://www.happyfappy.org/torrents.php
+        target: _blank
+
     - 垃圾堆:
         icon: mdi-torrent
         href: https://pt.lajidui.top/torrents.php
-        description: 名字戏谑，但资源实用，适合试用
-        target: _blank
+        description: 名字搞笑但资源实用
         siteMonitor: https://pt.lajidui.top/torrents.php
+        target: _blank
+
     - 三月 March:
         icon: mdi-torrent
         href: https://duckboobee.org/torrents.php
-        description: 极小众站，资源稀少，趣味性强
-        target: _blank
+        description: 极小众 PT，资源稀有
         siteMonitor: https://duckboobee.org/torrents.php
+        target: _blank
 
 - 云服务:
     - 1Panel-Oracle:
         icon: mdi-view-dashboard-variant
         href: https://panel.eoysky.com/
-        description: Oracle 主机管理面板
-        target: _blank
+        description: Oracle 云服务器管理面板
         siteMonitor: https://panel.eoysky.com/
+        target: _blank
+
     - 青龙面板-Oracle:
         icon: mdi-script-text
         href: https://ql.astralwave.vip/login
-        description: Oracle 青龙定时任务
-        target: _blank
+        description: Oracle 云青龙计划任务
         siteMonitor: https://ql.astralwave.vip/login
+        target: _blank
+
     - Bitwarden:
         icon: mdi-lock
         href: https://vw.eoysky.com/
-        description: Bitwarden 密码管理器
-        target: _blank
+        description: 密码管理器 Bitwarden
         siteMonitor: https://vw.eoysky.com/
+        target: _blank
+
     - FreshRSS:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/freshrss.png
         href: https://admin.rsshub.in/
         description: 自托管 RSS 聚合器
+        siteMonitor: https://admin.rsshub.in/
         target: _blank
-        siteMonitor: https://admin.rsshub.in
         widget:
           type: freshrss
           url: https://admin.rsshub.in
@@ -303,45 +316,42 @@
           fields:
             - subscriptions
             - unread
+
     - RSSHub:
         icon: mdi-rss-box
         href: https://rsshub.in/
-        description: RSS 订阅服务
-        target: _blank
+        description: RSS 源路由转换服务
         siteMonitor: https://rsshub.in/
+        target: _blank
+
     - Telegram API:
         icon: mdi-api
         href: https://tapi.eoysky.com/
-        description: Telegram API 代理
-        target: _blank
+        description: Telegram API 加速
         siteMonitor: https://tapi.eoysky.com/
-    - Telegram Proxy:
-        icon: mdi-telegram-box
-        href: https://tg.jiek.top/
-        description: Telegram 代理服务
         target: _blank
+
+    - Telegram Proxy:
+        icon: mdi-telegram
+        href: https://tg.jiek.top/
+        description: Telegram MTProxy 服务
         siteMonitor: https://tg.jiek.top/
+        target: _blank
+
     - Magichub:
         icon: mdi-account-star-outline
         href: https://magichub.top/
-        description: 个人代理服务管理
-        target: _blank
+        description: 自助代理管理中心
         siteMonitor: https://magichub.top/
+        target: _blank
+
     - Subconverter:
         icon: mdi-file-swap-outline
         href: https://sub.magichub.top/
-        description: 代理订阅转换
-        target: _blank
+        description: 订阅转换工具 Subconverter
         siteMonitor: https://sub.magichub.top/
+        target: _blank
+
     - Dilyslyu.com:
         icon: mdi-creation
-        href: https://dilyslyu.com/
-        description: 个人主页 (Dilyslyu)
-        target: _blank
-        siteMonitor: https://dilyslyu.com/
-    - Astralwave.io:
-        icon: mdi-creation
-        href: https://astralwave.io/
-        description: 个人主页 (Astralwave)
-        target: _blank
-        siteMonitor: https://astralwave.io/
+        href: https://dilysly
