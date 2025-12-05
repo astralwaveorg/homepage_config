@@ -2,7 +2,7 @@
 # 已整合最新内网服务 + PT站点 + 云服务
 # https://gethomepage.dev/configs/services/
 
-- 系统管理:
+- 核心系统管理:
     - OpenWrt 管理界面:
         icon: mdi-router-network
         href: https://wrt.homehub.stream:8443/
@@ -19,6 +19,25 @@
         server: 10.0.1.1
         target: _blank
 
+    - 系统监控中心:
+        icon: mdi-chart-box-outline
+        href: https://monitor.homehub.stream:8443/
+        description: Grafana 系统监控与可视化
+        siteMonitor: https://monitor.homehub.stream:8443/
+        server: 10.0.1.5
+
+    - 青龙面板:
+        icon: mdi-script-text-outline
+        href: https://ql.homehub.stream:8443/
+        description: 自动化脚本任务编排（青龙）
+        siteMonitor: https://ql.homehub.stream:8443/
+        server: 10.0.1.5
+
+    - SSL 黑洞:
+        icon: mdi-shield-lock
+        href: https://blackhole.local/
+        description: 安全默认站点（黑洞页）
+
     - PVE 虚拟化管理:
         icon: mdi-server
         href: https://pve.homehub.stream:8443/
@@ -27,6 +46,14 @@
         server: 10.0.1.253
         target: _blank
 
+    - Docker 镜像仓库:
+        icon: mdi-docker
+        href: https://docker.homehub.stream:8443/
+        description: Nexus3 Docker 镜像仓库（SSL 反代）
+        siteMonitor: https://docker.homehub.stream:8443/
+        server: 10.0.1.10
+
+- 主机与面板服务:
     - 飞牛 OS 面板:
         icon: mdi-desktop-tower
         href: https://fn.homehub.stream:8443/
@@ -49,26 +76,35 @@
         siteMonitor: https://upanel.homehub.stream:8443/
         server: 10.0.1.5
 
-    - 系统监控中心:
-        icon: mdi-chart-box-outline
-        href: https://monitor.homehub.stream:8443/
-        description: Grafana 系统监控与可视化
-        siteMonitor: https://monitor.homehub.stream:8443/
-        server: 10.0.1.5
+    - Docker Web 控制台:
+        icon: mdi-docker
+        href: https://docweb.homehub.stream:8443/
+        description: Nexus3 Web 控制台
+        siteMonitor: https://docweb.homehub.stream:8443/
+        server: 10.0.1.10
 
-    - 青龙面板:
-        icon: mdi-script-text-outline
-        href: https://ql.homehub.stream:8443/
-        description: 自动化脚本任务编排（青龙）
-        siteMonitor: https://ql.homehub.stream:8443/
-        server: 10.0.1.5
+    - 1Panel-Oracle:
+        icon: mdi-view-dashboard-variant
+        href: https://panel.eoysky.com/
+        description: Oracle 云服务器管理面板
+        siteMonitor: https://panel.eoysky.com/
+        target: _blank
 
-    - SSL 黑洞:
-        icon: mdi-shield-lock
-        href: https://blackhole.local/
-        description: 安全默认站点（黑洞页）
+    - 青龙面板-Oracle:
+        icon: mdi-script-text
+        href: https://ql.astralwave.vip/login
+        description: Oracle 云青龙计划任务
+        siteMonitor: https://ql.astralwave.vip/login
+        target: _blank
 
-- 媒体服务:
+    - Bitwarden:
+        icon: mdi-lock
+        href: https://vw.eoysky.com/
+        description: 密码管理器 Bitwarden
+        siteMonitor: https://vw.eoysky.com/
+        target: _blank
+
+- 媒体与内容中心:
     - Plex 媒体服务器:
         icon: mdi-plex
         href: https://plex.homehub.stream:8443/web
@@ -90,7 +126,35 @@
         siteMonitor: https://mp.homehub.stream:8443/
         server: 10.0.1.2
 
-- 下载服务:
+    - FreshRSS:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/freshrss.png
+        href: https://admin.rsshub.in/
+        description: 自托管 RSS 聚合器
+        siteMonitor: https://admin.rsshub.in/
+        target: _blank
+        widget:
+          type: freshrss
+          url: https://admin.rsshub.in
+          username: astral
+          password: Rain@8240
+          fields:
+            - subscriptions
+            - unread
+
+    - RSSHub:
+        icon: mdi-rss-box
+        href: https://rsshub.in/
+        description: RSS 源路由转换服务
+        siteMonitor: https://rsshub.in/
+        target: _blank
+
+    - 皇后音乐:
+        icon: mdi-music
+        href: https://open.cd/
+        description: 最专业的中文无损音乐 PT
+        target: _blank
+
+- 下载与文件服务:
     - Transmission:
         icon: mdi-transmission-tower
         href: https://tr.homehub.stream:8443/
@@ -119,22 +183,68 @@
         siteMonitor: https://keep.homehub.stream:8443/
         server: 10.0.1.2
 
-- Docker 服务:
-    - Docker 镜像仓库:
-        icon: mdi-docker
-        href: https://docker.homehub.stream:8443/
-        description: Nexus3 Docker 镜像仓库（SSL 反代）
-        siteMonitor: https://docker.homehub.stream:8443/
-        server: 10.0.1.10
+    - 海豚音乐:
+        icon: mdi-music
+        href: https://dicmusic.com/torrents.php
+        description: 欧美与古典音乐资源丰富
+        target: _blank
 
-    - Docker Web 控制台:
-        icon: mdi-docker
-        href: https://docweb.homehub.stream:8443/
-        description: Nexus3 Web 控制台
-        siteMonitor: https://docweb.homehub.stream:8443/
-        server: 10.0.1.10
+    - JPopsuki 音乐:
+        icon: mdi-music
+        href: https://jpopsuki.eu/torrents.php
+        description: 顶级日音无损 PT，J-Pop/动漫音乐首选
+        target: _blank
 
-- SSH 管理入口:
+- 网络与安全工具:
+    - Telegram API:
+        icon: mdi-api
+        href: https://tapi.eoysky.com/
+        description: Telegram API 加速
+        siteMonitor: https://tapi.eoysky.com/
+        target: _blank
+
+    - Telegram Proxy:
+        icon: mdi-telegram
+        href: https://tg.jiek.top/
+        description: Telegram MTProxy 服务
+        siteMonitor: https://tg.jiek.top/
+        target: _blank
+
+    - MagicHub:
+        icon: mdi-account-star-outline
+        href: https://magichub.top/
+        description: 自助代理管理中心
+        siteMonitor: https://magichub.top/
+        target: _blank
+
+    - Subconverter:
+        icon: mdi-file-swap-outline
+        href: https://sub.magichub.top/
+        description: 订阅转换工具 Subconverter
+        siteMonitor: https://sub.magichub.top/
+        target: _blank
+
+    - Astral 博客:
+        icon: mdi-creation
+        href: https://astralwave.org/
+        description: Astral 个人博客主页
+        siteMonitor: https://astralwave.org/
+        target: _blank
+
+    - DilysLyu 博客:
+        icon: mdi-creation
+        href: https://dilyslyu.com/
+        description: DilysLyu 个人博客主页
+        siteMonitor: https://dilyslyu.com/
+        target: _blank
+
+    - 皇后音乐（PT）:
+        icon: mdi-music
+        href: https://open.cd/
+        description: 无损音乐 PT 资源站
+        target: _blank
+
+- SSH 终端与远程运维:
     - NanoPi（OpenWrt）:
         icon: mdi-console
         href: ssh://root@lab.homehub.stream:22001
@@ -170,7 +280,7 @@
         href: ssh://root@lab.homehub.stream:22253
         description: SSH → 10.0.1.253（PVE）
 
-- PT 站点:
+- PT 影音资源:
     - M-Team 馒头:
         icon: mdi-filmstrip
         href: https://kp.m-team.cc/browse
@@ -189,25 +299,7 @@
         icon: mdi-filmstrip
         href: https://hhanclub.top/
         description: 邀请制，高质量种子集中地
-        siteMonitor: https://hhanclub.top/
-        target: _blank
-
-    - 皇后音乐:
-        icon: mdi-music
-        href: https://open.cd/
-        description: 最专业的中文无损音乐 PT
-        target: _blank
-
-    - 海豚音乐:
-        icon: mdi-music
-        href: https://dicmusic.com/torrents.php
-        description: 欧美与古典音乐资源丰富
-        target: _blank
-
-    - JPopsuki 音乐:
-        icon: mdi-music
-        href: https://jpopsuki.eu/torrents.php
-        description: 顶级日音无损 PT，J-Pop/动漫音乐首选
+        siteMonitor: https.hhanclub.top/
         target: _blank
 
     - PTTime:
@@ -245,6 +337,7 @@
         siteMonitor: https://sewerpt.com/torrents.php
         target: _blank
 
+- 云服务与外部工具:
     - Rousi 肉丝:
         icon: mdi-filmstrip
         href: https://rousi.zip/torrents.php
@@ -280,40 +373,11 @@
         siteMonitor: https://duckboobee.org/torrents.php
         target: _blank
 
-- 云服务:
-    - 1Panel-Oracle:
-        icon: mdi-view-dashboard-variant
-        href: https://panel.eoysky.com/
-        description: Oracle 云服务器管理面板
-        siteMonitor: https://panel.eoysky.com/
-        target: _blank
-
-    - 青龙面板-Oracle:
-        icon: mdi-script-text
-        href: https://ql.astralwave.vip/login
-        description: Oracle 云青龙计划任务
-        siteMonitor: https://ql.astralwave.vip/login
-        target: _blank
-
-    - Bitwarden:
-        icon: mdi-lock
-        href: https://vw.eoysky.com/
-        description: 密码管理器 Bitwarden
-        siteMonitor: https://vw.eoysky.com/
-        target: _blank
-
     - Telegram API:
         icon: mdi-api
         href: https://tapi.eoysky.com/
         description: Telegram API 加速
         siteMonitor: https://tapi.eoysky.com/
-        target: _blank
-
-    - Telegram Proxy:
-        icon: mdi-telegram
-        href: https://tg.jiek.top/
-        description: Telegram MTProxy 服务
-        siteMonitor: https://tg.jiek.top/
         target: _blank
 
     - MagicHub:
@@ -329,29 +393,3 @@
         description: 订阅转换工具 Subconverter
         siteMonitor: https://sub.magichub.top/
         target: _blank
-
-    - DilysLyu Blog:
-        icon: mdi-creation
-        href: https://dilysly
-
-    - RSSHub:
-        icon: mdi-rss-box
-        href: https://rsshub.in/
-        description: RSS 源路由转换服务
-        siteMonitor: https://rsshub.in/
-        target: _blank
-
-    - FreshRSS:
-        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/freshrss.png
-        href: https://admin.rsshub.in/
-        description: 自托管 RSS 聚合器
-        siteMonitor: https://admin.rsshub.in/
-        target: _blank
-        widget:
-          type: freshrss
-          url: https://admin.rsshub.in
-          username: astral
-          password: Rain@8240
-          fields:
-            - subscriptions
-            - unread
