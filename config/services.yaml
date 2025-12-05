@@ -126,6 +126,13 @@
         siteMonitor: https://mp.homehub.stream:8443/
         server: 10.0.1.2
 
+    - RSSHub:
+        icon: mdi-rss-box
+        href: https://rsshub.in/
+        description: RSS 源路由转换服务
+        siteMonitor: https://rsshub.in/
+        target: _blank
+
     - FreshRSS:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/freshrss.png
         href: https://admin.rsshub.in/
@@ -140,19 +147,6 @@
           fields:
             - subscriptions
             - unread
-
-    - RSSHub:
-        icon: mdi-rss-box
-        href: https://rsshub.in/
-        description: RSS 源路由转换服务
-        siteMonitor: https://rsshub.in/
-        target: _blank
-
-    - 皇后音乐:
-        icon: mdi-music
-        href: https://open.cd/
-        description: 最专业的中文无损音乐 PT
-        target: _blank
 
 - 下载与文件服务:
     - Transmission:
@@ -182,6 +176,12 @@
         description: 长期保种稳定节点
         siteMonitor: https://keep.homehub.stream:8443/
         server: 10.0.1.2
+
+    - 皇后音乐:
+        icon: mdi-music
+        href: https://open.cd/
+        description: 最专业的中文无损音乐 PT
+        target: _blank
 
     - 海豚音乐:
         icon: mdi-music
@@ -236,12 +236,6 @@
         href: https://dilyslyu.com/
         description: DilysLyu 个人博客主页
         siteMonitor: https://dilyslyu.com/
-        target: _blank
-
-    - 皇后音乐（PT）:
-        icon: mdi-music
-        href: https://open.cd/
-        description: 无损音乐 PT 资源站
         target: _blank
 
 - SSH 终端与远程运维:
