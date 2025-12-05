@@ -302,28 +302,6 @@
         siteMonitor: https://vw.eoysky.com/
         target: _blank
 
-    - FreshRSS:
-        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/freshrss.png
-        href: https://admin.rsshub.in/
-        description: 自托管 RSS 聚合器
-        siteMonitor: https://admin.rsshub.in/
-        target: _blank
-        widget:
-          type: freshrss
-          url: https://admin.rsshub.in
-          username: astral
-          password: Rain@8240
-          fields:
-            - subscriptions
-            - unread
-
-    - RSSHub:
-        icon: mdi-rss-box
-        href: https://rsshub.in/
-        description: RSS 源路由转换服务
-        siteMonitor: https://rsshub.in/
-        target: _blank
-
     - Telegram API:
         icon: mdi-api
         href: https://tapi.eoysky.com/
@@ -338,7 +316,7 @@
         siteMonitor: https://tg.jiek.top/
         target: _blank
 
-    - Magichub:
+    - MagicHub:
         icon: mdi-account-star-outline
         href: https://magichub.top/
         description: 自助代理管理中心
@@ -352,6 +330,28 @@
         siteMonitor: https://sub.magichub.top/
         target: _blank
 
-    - Dilyslyu.com:
+    - DilysLyu Blog:
         icon: mdi-creation
         href: https://dilysly
+
+    - RSSHub:
+        icon: mdi-rss-box
+        href: https://rsshub.in/
+        description: RSS 源路由转换服务
+        siteMonitor: https://rsshub.in/
+        target: _blank
+
+    - FreshRSS:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/freshrss.png
+        href: https://admin.rsshub.in/
+        description: 自托管 RSS 聚合器
+        siteMonitor: https://admin.rsshub.in/
+        target: _blank
+        widget:
+          type: freshrss
+          url: https://admin.rsshub.in
+          username: astral
+          password: Rain@8240
+          fields:
+            - subscriptions
+            - unread
