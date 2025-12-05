@@ -99,7 +99,7 @@
         server: 10.0.1.2
 
     - qBittorrent（订阅）:
-        icon: mdi-qbittorrent
+        icon: mdi-rss-box
         href: https://qb.homehub.stream:8443/
         description: qBittorrent 订阅下载节点
         siteMonitor: https://qb.homehub.stream:8443/
@@ -172,21 +172,21 @@
 
 - PT 站点:
     - M-Team 馒头:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://kp.m-team.cc/browse
         description: 资源全面，做种健康，顶级中文 PT 站
         siteMonitor: https://api2.m-team.cc/
         target: _blank
 
     - Audiences 观众:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://audiences.me/
         description: 界面现代，资源更新快，综合型 PT
         siteMonitor: https://audiences.me/
         target: _blank
 
     - HHCLUB 憨憨:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://hhanclub.top/
         description: 邀请制，高质量种子集中地
         siteMonitor: https://hhanclub.top/
@@ -211,7 +211,7 @@
         target: _blank
 
     - PTTime:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://www.pttime.org/torrents.php
         description: 高清影视为主，稳定老站
         siteMonitor: https://www.pttime.org/torrents.php
@@ -225,56 +225,56 @@
         target: _blank
 
     - BTSCHOOL:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://pt.btschool.club/torrents.php
         description: 综合资源，体量大，长期稳定
         siteMonitor: https://pt.btschool.club/torrents.php
         target: _blank
 
     - PTSKIT:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://www.ptskit.org/torrents.php
         description: 动漫/电影为主，经典老站
         siteMonitor: https://www.ptskit.org/torrents.php
         target: _blank
 
     - 下水道PT:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://sewerpt.com/torrents.php
         description: 趣味小众站，资源更新快
         siteMonitor: https://sewerpt.com/torrents.php
         target: _blank
 
     - Rousi 肉丝:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://rousi.zip/torrents.php
         description: 小型站，冷门资源多
         siteMonitor: https://rousi.zip/torrents.php
         target: _blank
 
     - 唐门PT:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://tmpt.top/torrents.php
         description: 国产影视为主，小众特色 PT
         siteMonitor: https://tmpt.top/torrents.php
         target: _blank
 
     - HappyFappy:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://www.happyfappy.org/torrents.php
         description: 社区友好，新手友好 PT
         siteMonitor: https://www.happyfappy.org/torrents.php
         target: _blank
 
     - 垃圾堆:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://pt.lajidui.top/torrents.php
         description: 名字搞笑但资源实用
         siteMonitor: https://pt.lajidui.top/torrents.php
         target: _blank
 
     - 三月 March:
-        icon: mdi-torrent
+        icon: mdi-filmstrip
         href: https://duckboobee.org/torrents.php
         description: 极小众 PT，资源稀有
         siteMonitor: https://duckboobee.org/torrents.php
