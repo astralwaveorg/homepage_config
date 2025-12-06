@@ -126,8 +126,15 @@
         siteMonitor: https://mp.homehub.stream:8443/
         server: 10.0.1.2
 
+    - Immich:
+        icon: https://photo.homehub.stream:8443/favicon-32.png
+        href: https://photo.homehub.stream:8443/
+        description: Immich 个人照片管理平台
+        siteMonitor: https://photo.homehub.stream:8443/
+        server: 10.0.1.2
+
     - RSSHub:
-        icon: mdi-rss-box
+        icon: https://sub.rsshub.in/favicon.ico
         href: https://rsshub.in/
         description: RSS 源路由转换服务
         siteMonitor: https://rsshub.in/
