@@ -4,7 +4,7 @@
 
 - 核心系统管理:
     - OpenWrt 管理界面:
-        icon: mdi-router-network
+        icon: https://openwrt.org/favicon.ico
         href: https://wrt.homehub.stream:8443/
         description: OpenWrt 路由管理后台
         siteMonitor: https://wrt.homehub.stream:8443/
@@ -12,7 +12,7 @@
         server: 10.0.1.1
 
     - DDNS-Go:
-        icon: mdi-dns
+        icon: https://ddns.homehub.stream:8443/favicon.ico
         href: https://ddns.homehub.stream:8443/
         description: 动态域名解析（DDNS-Go）
         siteMonitor: https://ddns.homehub.stream:8443/
@@ -20,26 +20,21 @@
         target: _blank
 
     - 系统监控中心:
-        icon: mdi-chart-box-outline
+        icon: https://monitor.homehub.stream:8443/public/img/fav32.png
         href: https://monitor.homehub.stream:8443/
         description: Grafana 系统监控与可视化
         siteMonitor: https://monitor.homehub.stream:8443/
         server: 10.0.1.5
 
     - 青龙面板:
-        icon: mdi-script-text-outline
+        icon: https://qn.whyour.cn/favicon.svg
         href: https://ql.homehub.stream:8443/
         description: 自动化脚本任务编排（青龙）
         siteMonitor: https://ql.homehub.stream:8443/
         server: 10.0.1.5
 
-    - SSL 黑洞:
-        icon: mdi-shield-lock
-        href: https://blackhole.local/
-        description: 安全默认站点（黑洞页）
-
     - PVE 虚拟化管理:
-        icon: mdi-server
+        icon: https://pve.homehub.stream:8443/favicon.ico
         href: https://pve.homehub.stream:8443/
         description: Proxmox VE 管理面板
         siteMonitor: https://pve.homehub.stream:8443/
@@ -55,22 +50,22 @@
 
 - 主机与面板服务:
     - 飞牛 OS 面板:
-        icon: mdi-desktop-tower
+        icon: https://www.fnnas.com/favicon.ico
         href: https://fn.homehub.stream:8443/
         description: 飞牛 OS 主机管理中心
         siteMonitor: https://fn.homehub.stream:8443/
         server: 10.0.1.2
 
-    - 飞牛OS 1Panel:
-        icon: mdi-view-dashboard-variant
+    - 1Panel（飞牛OS）:
+        icon: https://1panel.cn/favicon.png
         href: https://panel.homehub.stream:8443/
         description: 1Panel 面板（飞牛 OS）
         siteMonitor: https://panel.homehub.stream:8443/
         server: 10.0.1.2
         target: _blank
 
-    - Ubuntu 1Panel:
-        icon: mdi-view-dashboard-variant
+    - 1Panel（Ubuntu）:
+        icon: https://1panel.cn/favicon.png
         href: https://upanel.homehub.stream:8443/
         description: 1Panel（Ubuntu 服务器）
         siteMonitor: https://upanel.homehub.stream:8443/
@@ -84,21 +79,21 @@
         server: 10.0.1.10
 
     - 1Panel-Oracle:
-        icon: mdi-view-dashboard-variant
+        icon: https://1panel.cn/favicon.png
         href: https://panel.eoysky.com/
         description: Oracle 云服务器管理面板
         siteMonitor: https://panel.eoysky.com/
         target: _blank
 
     - 青龙面板-Oracle:
-        icon: mdi-script-text
+        icon: https://qn.whyour.cn/favicon.svg
         href: https://ql.astralwave.vip/login
         description: Oracle 云青龙计划任务
         siteMonitor: https://ql.astralwave.vip/login
         target: _blank
 
     - Bitwarden:
-        icon: mdi-lock
+        icon: https://bitwarden.com/favicon.ico
         href: https://vw.eoysky.com/
         description: 密码管理器 Bitwarden
         siteMonitor: https://vw.eoysky.com/
@@ -106,21 +101,21 @@
 
 - 媒体与内容中心:
     - Plex 媒体服务器:
-        icon: mdi-plex
+        icon: https://www.plex.tv/wp-content/themes/plex/assets/img/favicons/favicon.ico
         href: https://plex.homehub.stream:8443/web
         description: Plex 媒体库与家庭影音中心
         siteMonitor: https://plex.homehub.stream:8443/
         server: 10.0.1.2
 
     - 飞牛影视:
-        icon: mdi-movie-roll
+        icon: https://mv.homehub.stream:8443/v/static/favicon.png
         href: https://mv.homehub.stream:8443/
         description: 飞牛 OS 自带影视系统
         siteMonitor: https://mv.homehub.stream:8443/
         server: 10.0.1.2
 
     - MoviePilot:
-        icon: mdi-movie-open
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/media/MoviePilot.png
         href: https://mp.homehub.stream:8443/
         description: MoviePilot 媒体管理平台
         siteMonitor: https://mp.homehub.stream:8443/
