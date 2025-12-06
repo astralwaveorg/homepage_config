@@ -167,34 +167,34 @@
         server: 10.0.1.2
 
     - qBittorrent（订阅）:
-        icon: mdi-rss-box
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/tools/qBittorrent.ico
         href: https://qb.homehub.stream:8443/
         description: qBittorrent 订阅下载节点
         siteMonitor: https://qb.homehub.stream:8443/
         server: 10.0.1.2
 
     - qBittorrent（刷流）:
-        icon: mdi-trending-up
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/tools/qBittorrent.ico
         href: https://flush.homehub.stream:8443/
         description: 刷流专用高速客户端
         siteMonitor: https://flush.homehub.stream:8443/
         server: 10.0.1.2
 
     - qBittorrent（保种）:
-        icon: mdi-seed
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/tools/qBittorrent.ico
         href: https://keep.homehub.stream:8443/
         description: 长期保种稳定节点
         siteMonitor: https://keep.homehub.stream:8443/
         server: 10.0.1.2
 
     - 皇后音乐:
-        icon: mdi-music
+        icon: https://open.cd/favicon.ico
         href: https://open.cd/
         description: 最专业的中文无损音乐 PT
         target: _blank
 
     - 海豚音乐:
-        icon: mdi-music
+        icon: https://dicmusic.com/favicon.ico
         href: https://dicmusic.com/torrents.php
         description: 欧美与古典音乐资源丰富
         target: _blank
