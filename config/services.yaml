@@ -200,7 +200,7 @@
         target: _blank
 
     - JPopsuki 音乐:
-        icon: mdi-music
+        icon: https://jpopsuki.eu/favicon.ico
         href: https://jpopsuki.eu/torrents.php
         description: 顶级日音无损 PT，J-Pop/动漫音乐首选
         target: _blank
@@ -211,13 +211,6 @@
         href: https://tapi.eoysky.com/
         description: Telegram API 加速
         siteMonitor: https://tapi.eoysky.com/
-        target: _blank
-
-    - Telegram Proxy:
-        icon: mdi-telegram
-        href: https://tg.jiek.top/
-        description: Telegram MTProxy 服务
-        siteMonitor: https://tg.jiek.top/
         target: _blank
 
     - MagicHub:
