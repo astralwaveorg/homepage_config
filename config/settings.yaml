@@ -21,24 +21,9 @@ background:
 fullWidth: false
 useEqualHeights: true
 useEqualHeightCards: true
-groupsInitiallyCollapsed: true
+groupsInitiallyCollapsed: false
 
 layout:
-  'NAS 服务[外网]':
-    columns: 3
-    initiallyCollapsed: false
-    icon: mdi-nas
-    order: 1
-  'NAS 服务[内网]':
-    columns: 3
-    initiallyCollapsed: false
-    icon: mdi-nas
-    order: 2
-  'VPS 服务':
-    columns: 3
-    initiallyCollapsed: false
-    icon: mdi-server
-    order: 3
 
 # 天气或其他需要API密钥的服务提供商
 providers:
