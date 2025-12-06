@@ -26,13 +26,6 @@
         siteMonitor: https://monitor.homehub.stream:8443/
         server: 10.0.1.5
 
-    - 青龙面板:
-        icon: https://qn.whyour.cn/favicon.svg
-        href: https://ql.homehub.stream:8443/
-        description: 自动化脚本任务编排（青龙）
-        siteMonitor: https://ql.homehub.stream:8443/
-        server: 10.0.1.5
-
     - PVE 虚拟化管理:
         icon: https://pve.homehub.stream:8443/favicon.ico
         href: https://pve.homehub.stream:8443/
@@ -40,6 +33,21 @@
         siteMonitor: https://pve.homehub.stream:8443/
         server: 10.0.1.253
         target: _blank
+
+    - 工作流程自动化:
+        icon: https://n8n.homehub.stream:8443/favicon.ico
+        href: https://n8n.homehub.stream:8443/
+        description: AI工作流程自动化
+        siteMonitor: https://n8n.homehub.stream:8443/
+        server: 10.0.1.2
+        target: _blank
+
+    - 青龙面板:
+        icon: https://qn.whyour.cn/favicon.svg
+        href: https://ql.homehub.stream:8443/
+        description: 自动化脚本任务编排（青龙）
+        siteMonitor: https://ql.homehub.stream:8443/
+        server: 10.0.1.5
 
     - Docker 镜像仓库:
         icon: mdi-docker
