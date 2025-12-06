@@ -370,7 +370,7 @@
         target: _blank
 
     - Telegram API:
-        icon: mdi-api
+        icon: https://telegram.org/favicon.ico
         href: https://tapi.eoysky.com/
         description: Telegram API 加速
         siteMonitor: https://tapi.eoysky.com/
