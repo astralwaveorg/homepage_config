@@ -71,6 +71,13 @@
         siteMonitor: https://upanel.homehub.stream:8443/
         server: 10.0.1.5
 
+    - 1Panel（Oracle）:
+        icon: https://1panel.cn/favicon.png
+        href: https://panel.eoysky.com/
+        description: Oracle 云服务器管理面板
+        siteMonitor: https://panel.eoysky.com/
+        target: _blank
+
     - Docker Web 控制台:
         icon: https://docweb.homehub.stream:8443/static/rapture/resources/safari-favicon-32x32.png
         href: https://docweb.homehub.stream:8443/
@@ -78,18 +85,11 @@
         siteMonitor: https://docweb.homehub.stream:8443/
         server: 10.0.1.10
 
-    - 1Panel-Oracle:
-        icon: https://1panel.cn/favicon.png
-        href: https://panel.eoysky.com/
-        description: Oracle 云服务器管理面板
-        siteMonitor: https://panel.eoysky.com/
-        target: _blank
-
     - 青龙面板-Oracle:
         icon: https://qn.whyour.cn/favicon.svg
         href: https://ql.astralwave.vip/login
         description: Oracle 云青龙计划任务
-        siteMonitor: https://ql.astralwave.vip/login
+        siteMonitor: https://ql.astralwave.vip/
         target: _blank
 
     - Bitwarden:
