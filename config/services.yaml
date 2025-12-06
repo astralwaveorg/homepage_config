@@ -72,7 +72,7 @@
         server: 10.0.1.5
 
     - Docker Web 控制台:
-        icon: mdi-docker
+        icon: https://docweb.homehub.stream:8443/static/rapture/resources/safari-favicon-32x32.png
         href: https://docweb.homehub.stream:8443/
         description: Nexus3 Web 控制台
         siteMonitor: https://docweb.homehub.stream:8443/
