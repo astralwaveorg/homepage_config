@@ -50,7 +50,7 @@
         server: 10.0.1.5
 
     - Docker 镜像仓库:
-        icon: mdi-docker
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/docker_hub.ico
         href: https://docker.homehub.stream:8443/
         description: Nexus3 Docker 镜像仓库（SSL 反代）
         siteMonitor: https://docker.homehub.stream:8443/
@@ -123,7 +123,7 @@
         server: 10.0.1.2
 
     - MoviePilot:
-        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/media/MoviePilot.png
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/movie_pilot.png
         href: https://mp.homehub.stream:8443/
         description: MoviePilot 媒体管理平台
         siteMonitor: https://mp.homehub.stream:8443/
@@ -167,21 +167,21 @@
         server: 10.0.1.2
 
     - qBittorrent（订阅）:
-        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/tools/qBittorrent.ico
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/qbittorrent.ico
         href: https://qb.homehub.stream:8443/
         description: qBittorrent 订阅下载节点
         siteMonitor: https://qb.homehub.stream:8443/
         server: 10.0.1.2
 
     - qBittorrent（刷流）:
-        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/tools/qBittorrent.ico
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/qbittorrent.ico
         href: https://flush.homehub.stream:8443/
         description: 刷流专用高速客户端
         siteMonitor: https://flush.homehub.stream:8443/
         server: 10.0.1.2
 
     - qBittorrent（保种）:
-        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/tools/qBittorrent.ico
+        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/qbittorrent.ico
         href: https://keep.homehub.stream:8443/
         description: 长期保种稳定节点
         siteMonitor: https://keep.homehub.stream:8443/
