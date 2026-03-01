@@ -1,6 +1,7 @@
 # Homepage 服务总配置
 # 已整合最新内网服务 + PT站点 + 云服务
-# https://gethomepage.dev/configs/services/
+# 主页：https://homehub.stream
+# 文档：https://gethomepage.dev/configs/services/
 
 - 核心系统管理:
     - OpenWrt 管理界面:
@@ -19,42 +20,20 @@
         server: 10.0.1.1
         target: _blank
 
-    - 系统监控中心:
-        icon: https://monitor.homehub.stream:8443/public/img/fav32.png
-        href: https://monitor.homehub.stream:8443/
-        description: Grafana 系统监控与可视化
-        siteMonitor: https://monitor.homehub.stream:8443/
-        server: 10.0.1.5
-
-    - PVE 虚拟化管理:
-        icon: https://pve.homehub.stream:8443/favicon.ico
-        href: https://pve.homehub.stream:8443/
-        description: Proxmox VE 管理面板
-        siteMonitor: https://pve.homehub.stream:8443/
-        server: 10.0.1.253
-        target: _blank
-
     - 工作流程自动化:
-        icon: https://n8n.homehub.stream:8443/favicon.ico
-        href: https://n8n.homehub.stream:8443/
+        icon: https://flow.homehub.stream:8443/favicon.ico
+        href: https://flow.homehub.stream:8443/
         description: AI工作流程自动化
-        siteMonitor: https://n8n.homehub.stream:8443/
+        siteMonitor: https://flow.homehub.stream:8443/
         server: 10.0.1.2
         target: _blank
 
     - 青龙面板:
         icon: https://qn.whyour.cn/favicon.svg
         href: https://ql.homehub.stream:8443/
-        description: 自动化脚本任务编排（青龙）
+        description: 自动化脚本任务（青龙面板）
         siteMonitor: https://ql.homehub.stream:8443/
-        server: 10.0.1.5
-
-    - Docker 镜像仓库:
-        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/docker_hub.ico
-        href: https://docker.homehub.stream:8443/
-        description: Nexus3 Docker 镜像仓库（SSL 反代）
-        siteMonitor: https://docker.homehub.stream:8443/
-        server: 10.0.1.10
+        server: 10.0.1.2
 
 - 主机与面板服务:
     - 飞牛 OS 面板:
@@ -64,20 +43,13 @@
         siteMonitor: https://fn.homehub.stream:8443/
         server: 10.0.1.2
 
-    - 1Panel（飞牛OS）:
-        icon: https://1panel.cn/favicon.png
-        href: https://panel.homehub.stream:8443/
-        description: 1Panel 面板（飞牛 OS）
-        siteMonitor: https://panel.homehub.stream:8443/
+    - Nginx UI:
+        icon: https://nginxui.com/assets/logo.svg
+        href: https://ngui.homehub.stream:8443/
+        description: Nginx UI 可视化管理界面
+        siteMonitor: https://ngui.homehub.stream:8443/
         server: 10.0.1.2
         target: _blank
-
-    - 1Panel（Ubuntu）:
-        icon: https://1panel.cn/favicon.png
-        href: https://upanel.homehub.stream:8443/
-        description: 1Panel（Ubuntu 服务器）
-        siteMonitor: https://upanel.homehub.stream:8443/
-        server: 10.0.1.5
 
     - 1Panel（Oracle）:
         icon: https://1panel.cn/favicon.png
@@ -87,13 +59,13 @@
         target: _blank
 
     - Docker Web 控制台:
-        icon: https://docweb.homehub.stream:8443/static/rapture/resources/safari-favicon-32x32.png
-        href: https://docweb.homehub.stream:8443/
-        description: Nexus3 Web 控制台
-        siteMonitor: https://docweb.homehub.stream:8443/
-        server: 10.0.1.10
+        icon: https://dockge.kuma.pet/icon.svg
+        href: https://dockge.homehub.stream:8443/
+        description: Docker 容器管理 Web 控制台
+        siteMonitor: https://dockge.homehub.stream:8443/
+        server: 10.0.1.2
 
-    - 青龙面板-Oracle:
+    - 青龙面板 (Oracle):
         icon: https://qn.whyour.cn/favicon.svg
         href: https://ql.astralwave.vip/login
         description: Oracle 云青龙计划任务
@@ -108,13 +80,6 @@
         target: _blank
 
 - 媒体与内容中心:
-    - Plex 媒体服务器:
-        icon: https://www.plex.tv/wp-content/themes/plex/assets/img/favicons/favicon.ico
-        href: https://plex.homehub.stream:8443/web
-        description: Plex 媒体库与家庭影音中心
-        siteMonitor: https://plex.homehub.stream:8443/
-        server: 10.0.1.2
-
     - 飞牛影视:
         icon: https://mv.homehub.stream:8443/v/static/favicon.png
         href: https://mv.homehub.stream:8443/
@@ -122,18 +87,18 @@
         siteMonitor: https://mv.homehub.stream:8443/
         server: 10.0.1.2
 
+    - Plex 媒体服务器:
+        icon: https://www.plex.tv/wp-content/themes/plex/assets/img/favicons/favicon.ico
+        href: https://plex.homehub.stream:8443/web
+        description: Plex 媒体库与家庭影音中心
+        siteMonitor: https://plex.homehub.stream:8443/
+        server: 10.0.1.2
+
     - MoviePilot:
         icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/movie_pilot.png
         href: https://mp.homehub.stream:8443/
         description: MoviePilot 媒体管理平台
         siteMonitor: https://mp.homehub.stream:8443/
-        server: 10.0.1.2
-
-    - Immich:
-        icon: https://photo.homehub.stream:8443/favicon-32.png
-        href: https://photo.homehub.stream:8443/
-        description: Immich 个人照片管理平台
-        siteMonitor: https://photo.homehub.stream:8443/
         server: 10.0.1.2
 
     - RSSHub:
@@ -161,49 +126,24 @@
 - 下载与文件服务:
     - Transmission:
         icon: mdi-transmission-tower
-        href: https://tr.homehub.stream:8443/
+        href: https://seed.homehub.stream:8443/
         description: Transmission BT 下载器
-        siteMonitor: https://tr.homehub.stream:8443/
+        siteMonitor: https://seed.homehub.stream:8443/
         server: 10.0.1.2
 
     - qBittorrent（订阅）:
         icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/qbittorrent.ico
-        href: https://qb.homehub.stream:8443/
+        href: https://down.homehub.stream:8443/
         description: qBittorrent 订阅下载节点
-        siteMonitor: https://qb.homehub.stream:8443/
+        siteMonitor: https://down.homehub.stream:8443/
         server: 10.0.1.2
 
     - qBittorrent（刷流）:
         icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/qbittorrent.ico
-        href: https://flush.homehub.stream:8443/
+        href: https://flux.homehub.stream:8443/
         description: 刷流专用高速客户端
-        siteMonitor: https://flush.homehub.stream:8443/
+        siteMonitor: https://flux.homehub.stream:8443/
         server: 10.0.1.2
-
-    - qBittorrent（保种）:
-        icon: https://cdn.jsdelivr.net/gh/astralwaveorg/icons@main/favicon/icons/qbittorrent.ico
-        href: https://keep.homehub.stream:8443/
-        description: 长期保种稳定节点
-        siteMonitor: https://keep.homehub.stream:8443/
-        server: 10.0.1.2
-
-    - 皇后音乐:
-        icon: https://open.cd/favicon.ico
-        href: https://open.cd/
-        description: 最专业的中文无损音乐 PT
-        target: _blank
-
-    - 海豚音乐:
-        icon: https://dicmusic.com/favicon.ico
-        href: https://dicmusic.com/torrents.php
-        description: 欧美与古典音乐资源丰富
-        target: _blank
-
-    - JPopsuki 音乐:
-        icon: https://jpopsuki.eu/favicon.ico
-        href: https://jpopsuki.eu/torrents.php
-        description: 顶级日音无损 PT，J-Pop/动漫音乐首选
-        target: _blank
 
 - 网络与安全工具:
     - Telegram API:
@@ -241,98 +181,16 @@
         siteMonitor: https://dilyslyu.com/
         target: _blank
 
-- SSH 终端与远程运维:
-    - NanoPi（OpenWrt）:
-        icon: mdi-console
-        href: ssh://root@lab.homehub.stream:22001
-        description: SSH → 10.0.1.1（NanoPi OS）
+# - SSH 终端与远程运维:
+#     - NanoPi（OpenWrt）:
+#         icon: mdi-console
+#         href: ssh://root@lab.homehub.stream:22001
+#         description: SSH → 10.0.1.1（NanoPi OS）
 
-    - FnOS 主机:
-        icon: mdi-console-line
-        href: ssh://root@lab.homehub.stream:22002
-        description: SSH → 10.0.1.2（飞牛 OS）
-
-    - AdGuardHome VM:
-        icon: mdi-shield-check
-        href: ssh://root@lab.homehub.stream:23003
-        description: SSH → 10.0.1.3（AdGuardHome）
-
-    - Clash VM:
-        icon: mdi-shield-lock-outline
-        href: ssh://root@lab.homehub.stream:23004
-        description: SSH → 10.0.1.4（Clash / Proxy）
-
-    - Ubuntu VM:
-        icon: mdi-console-network
-        href: ssh://root@lab.homehub.stream:23005
-        description: SSH → 10.0.1.5（Ubuntu）
-
-    - Docker VM:
-        icon: mdi-docker
-        href: ssh://root@lab.homehub.stream:23010
-        description: SSH → 10.0.1.10（Docker 主机）
-
-    - PVE 主机:
-        icon: mdi-server
-        href: ssh://root@lab.homehub.stream:22253
-        description: SSH → 10.0.1.253（PVE）
-
-- PT 影音资源:
-    - M-Team 馒头:
-        icon: mdi-filmstrip
-        href: https://kp.m-team.cc/browse
-        description: 资源全面，做种健康，顶级中文 PT 站
-        siteMonitor: https://api2.m-team.cc/
-        target: _blank
-
-    - Audiences 观众:
-        icon: mdi-filmstrip
-        href: https://audiences.me/
-        description: 界面现代，资源更新快，综合型 PT
-        siteMonitor: https://audiences.me/
-        target: _blank
-
-    - HHCLUB 憨憨:
-        icon: mdi-filmstrip
-        href: https://hhanclub.top/
-        description: 邀请制，高质量种子集中地
-        siteMonitor: https.hhanclub.top/
-        target: _blank
-
-    - PTTime:
-        icon: mdi-filmstrip
-        href: https://www.pttime.org/torrents.php
-        description: 高清影视为主，稳定老站
-        siteMonitor: https://www.pttime.org/torrents.php
-        target: _blank
-
-    - HDTime 高清时间:
-        icon: mdi-filmstrip
-        href: https://hdtime.org/
-        description: 专注高清影视，高画质
-        siteMonitor: https://hdtime.org/
-        target: _blank
-
-    - BTSCHOOL:
-        icon: mdi-filmstrip
-        href: https://pt.btschool.club/torrents.php
-        description: 综合资源，体量大，长期稳定
-        siteMonitor: https://pt.btschool.club/torrents.php
-        target: _blank
-
-    - PTSKIT:
-        icon: mdi-filmstrip
-        href: https://www.ptskit.org/torrents.php
-        description: 动漫/电影为主，经典老站
-        siteMonitor: https://www.ptskit.org/torrents.php
-        target: _blank
-
-    - 下水道PT:
-        icon: mdi-filmstrip
-        href: https://sewerpt.com/torrents.php
-        description: 趣味小众站，资源更新快
-        siteMonitor: https://sewerpt.com/torrents.php
-        target: _blank
+#     - FnOS 主机:
+#         icon: mdi-console-line
+#         href: ssh://root@lab.homehub.stream:22002
+#         description: SSH → 10.0.1.2（飞牛 OS）
 
 - 云服务与外部工具:
     - Rousi 肉丝:
